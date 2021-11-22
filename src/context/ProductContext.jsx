@@ -42,7 +42,7 @@ const ProductContextProvider = ({ children }) => {
     const [ state, dispatch ] = useReducer(reducer, INIT_STATE)
 
     async function getTopics(params){
-        const { data } = await axios(`http://localhost:8001/topics?${params}`)
+        const { data } = await axios(`https://js-watchshop.herokuapp.com/api/topics?${params}`)
            dispatch({
                type: "GET_TOPICS",
                payload: data
@@ -50,14 +50,14 @@ const ProductContextProvider = ({ children }) => {
     }
 
     async function addMainTopic(topic){
-        await axios.post('http://localhost:8001/topics', topic)
+        await axios.post('https://js-watchshop.herokuapp.com/api/topics', topic)
         getTopics()
     }
 
 
     //! ///////
     async function addDetails(id){
-        const { data } = await axios(`http://localhost:8001/topics/${id}`)
+        const { data } = await axios(`https://js-watchshop.herokuapp.com/api/topics/${id}`)
          dispatch({
              type: "GET_DETAILS",
              payload: data
@@ -65,13 +65,13 @@ const ProductContextProvider = ({ children }) => {
     }
 
     async function deleteTopic(id){
-        await axios.delete(`http://localhost:8001/topics/${id}`)
+        await axios.delete(`https://js-watchshop.herokuapp.com/api/topics/${id}`)
         getTopics()
     }
 
 
    async function editTopic(id){
-       let { data } = await axios(`http://localhost:8001/topics/${id}`)
+       let { data } = await axios(`https://js-watchshop.herokuapp.com/api/topics/${id}`)
          dispatch({
              type: "EDIT_TODO",
              payload: data
@@ -79,7 +79,7 @@ const ProductContextProvider = ({ children }) => {
    }
 
    const saveTask = async (newTask) => {
-       axios.patch(`http://localhost:8001/topics/${newTask.id}`, newTask)
+       axios.patch(`https://js-watchshop.herokuapp.com/api/topics/${newTask.id}`, newTask)
    }
 
 
