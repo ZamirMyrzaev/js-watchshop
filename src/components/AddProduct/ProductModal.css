@@ -1,0 +1,20 @@
+.add-topic{
+    text-align: center;
+    margin-top: 70px;
+}
+.add-sub-topic{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+}
+.add-sub-topic input{
+    height: 50px;
+    margin-bottom: 20px;
+    border: none;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.1);;
+}
+.btnSave{
+    width: 50%;
+    border-radius: 25px;
+}

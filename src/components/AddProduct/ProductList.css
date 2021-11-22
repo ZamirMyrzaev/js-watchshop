@@ -1,0 +1,148 @@
+.main{
+    background-color: #0F0F0F;
+    width: 100%;
+    height: 1100px;
+}
+.text_arrivals {
+    font-size: 30px;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    padding-top: 20px;
+
+}
+.bg-line3 {
+    width: 10%;
+    height: 3px;
+    background-color: #dad2d2;
+    position: relative;
+    top: 0%;
+    left: 45%;
+    text-align: center;
+    z-index: 2;
+}
+.search{
+    position: relative;
+    top: -5%;
+    left: 84%;
+    height: 3%;
+    width: 12%;
+    border: 2px solid white;
+    box-shadow: 0 0 15px 4px gray;
+    border-radius: 20px;
+}
+.radioInput{
+    position: relative;
+    left: 1%;
+    top: 10%;
+    width: 50%;
+}
+
+.mainCard{
+    position: relative;
+    top: -18%;
+    left: 16%;
+    background-color: #0F0F0F;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 71%;
+    text-align: center;
+}
+.pgnBlock{
+    margin: 0 auto;
+}
+.btnBlock{
+    margin-top: 20px;
+}
+.prev{
+    width: 80px;
+    height: 30px;
+    border-radius: 12px;
+    color: white;
+    background-color: rgb(24, 24, 24);
+}
+.next{
+    width: 80px;
+    height: 30px;
+    border-radius: 12px;
+    color: white;
+    background-color: rgb(24, 24, 24);
+}
+
+.mainRadio{
+    display: flex;
+}
+
+
+@media all and (max-width: 1100px) {
+    .main{
+        height: 950px;
+    }
+}
+
+@media all and (max-width: 900px) {
+    .main{
+        height: 850px;
+    }
+}
+
+@media all and (max-width: 700px) {
+    .main{
+        height: 750px;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .main{
+        height: 650px;
+    }
+    .mainCard{
+        max-width: 73%;
+        height: 400px;
+        top: 0%;
+    }
+    .text_arrivals {
+        font-size: 20px;
+        
+    }
+    .search{
+        font-size: 10px;
+    }
+    .prev{
+        width: 60px;
+        height: 30px;
+    }
+    .next{
+        width: 60px;
+        height: 30px;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .main{
+        height: 420px;
+    }
+    .mainCard{
+        max-width: 73%;
+        height: 300px;
+        top: 0%;
+    }
+    .text_arrivals {
+        font-size: 13px;
+        padding-top: 0;
+        
+    }
+    .search{
+        font-size: 8px;
+    }
+    .prev{
+        width: 40px;
+        height: 20px;
+        font-size: 10px;
+    }
+    .next{
+        width: 40px;
+        height: 20px;
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montagu+Slab&display=swap');
+.modalMainBlock{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 5);
+}
+.modalChildBlock{
+    background-color: white;
+    width: 450px;
+    height: 300px;
+    margin: 200px auto;
+    border-radius: 10px;
+    text-align: center;
+}
+.modalChildBlock button{
+   margin-left: 420px;
+   height: 30px;
+   width: 30px;
+   border-radius: 5px;
+   background-color: red;
+}
+.modalChildBlock span{
+    font-family: 'Montagu Slab', serif;
+    font-size: 40px;
+}

@@ -1,0 +1,43 @@
+.comBlock{
+    text-align: center;
+    background-color: #0F0F0F;
+}
+.comInput{
+    width: 300px;
+    height: 40px;
+}
+.comBlock button{
+    height: 40px;
+    background-color: royalblue;
+    color: white;
+}
+.task{
+    height: 40%;
+    width: 20%;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 30px;
+    background-color: white;
+}
+.task img{
+    height: 40px;
+    border-radius: 50px;
+}
+.mainTaskBlock{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.mainTaskBlock h5{
+    padding-top: 6px;
+    padding-left: 5px;
+}
+.mainTask{
+    margin: 15px
+}
+.comments{
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #0F0F0F;
+}

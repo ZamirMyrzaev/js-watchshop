@@ -1,0 +1,33 @@
+.add-topic{
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 70px;
+    background-color: #0F0F0F;
+}
+.add-sub-topic{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+}
+.add-sub-topic input{
+    height: 50px;
+    margin-bottom: 20px;
+}
+.add-sub-topic button{
+    width: 50%;
+    border-radius: 25px;
+    background-color: cornflowerblue;
+    color: white;
+    height: 50px;
+}
+
+@media all and (max-width: 600px) {
+    .add-sub-topic input{
+        height: 40px;
+        width: 90%;
+    }
+    .add-sub-topic button{
+        height: 40px;
+    }
+}

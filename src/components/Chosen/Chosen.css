@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+.chosen_card{
+    height: 400px;
+    width: 250px;
+    margin: 50px;
+    overflow: hidden;
+    text-align: center;
+    background-color: black;
+}
+
+.rolex{
+    height: 75%;
+    cursor: pointer;
+}
+
+.rolex:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.bran{
+    font-family: 'Playfair Display', serif;
+    padding-top: 30px;
+    color: white;
+}
+.pric{
+    font-family: 'Playfair Display', serif;
+    padding-top: 10px;
+    color: white;
+}
+.mainChosen{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #0F0F0F;
+}
+.Delete{
+    position: relative;
+    left: 39%;
+    top: -88%;
+    width: 30px;
+    height: 30px;
+    background-color: crimson;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    z-index: 2;
+}
+
+@media all and (max-width: 1100px) {
+    .chosen_card{
+        width: 200px;
+        height: 320px;
+    }
+}
+
+@media all and (max-width: 900px) {
+    .chosen_card{
+        width: 170px;
+        height: 250px;
+        margin: 30px;
+    }
+    .Delete{
+        top: -96%;
+    }
+}
+
+@media all and (max-width: 700px) {
+    .chosen_card{
+        width: 150px;
+        height: 200px;
+        margin: 20px;
+    }
+    .Delete{
+        top: -100%;
+    }
+    .bran{
+        font-size: 15px;
+    }
+    .pric{
+        font-size: 10px;
+    }
+
+}
+
+@media all and (max-width: 500px) {
+    .chosen_card{
+        width: 120px;
+        height: 160px;
+        margin: 15px;
+    }
+    .Delete{
+        width: 20px;
+        height: 20px;
+        top: -100%;
+        padding: 0;
+    }
+    .bran{
+        font-size: 12px;
+        margin: 0;
+    }
+    .pric{
+        padding-top: 0;
+    }
+
+}

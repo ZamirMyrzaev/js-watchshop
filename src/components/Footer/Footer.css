@@ -1,0 +1,101 @@
+.brands{
+    width: 100%;
+    height: auto;
+    background-color: black;
+}
+
+.our_brands{
+    font-size: 25px;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.bg-line4 {
+    width: 10%;
+    height: 2px;
+    background-color: #dad2d2;
+    position: relative;
+    top: 0%;
+    left: 45%;
+    text-align: center;
+}
+
+
+.rolex_logo{
+    width: 20%;
+    height: auto;
+   position: relative;
+   left: 20%;
+
+}
+
+.contacts{
+    width: 100%;
+    height: 250px;
+    background-image: url(../../assets/footer.png);
+}
+
+.footer_background{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.contact_text{
+    display: flex;
+    text-align: center;
+    z-index: 2;
+    position: relative;
+    top: 10px;
+    left: 15%;
+    width: 70%;
+}
+
+.about_shop{
+    font-size: 20px;
+    color: white;
+    margin: 30px 20px;
+}
+
+.about_shop_text{
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+
+
+@media all and (max-width: 600px) {
+    .our_brands{
+        font-size: 18px;
+    }
+    .about_shop{
+        font-size: 15px;
+        margin: 15px 15px;
+    }
+    .about_shop_text{
+        font-size: 10px;
+        margin-top: 15px;
+    }
+    .contacts{
+        height: 180px;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .our_brands{
+        font-size: 13px;
+    }
+    .about_shop{
+        font-size: 10px;
+        margin: 10px 10px;
+    }
+    .about_shop_text{
+        font-size: 6px;
+        margin-top: 10px;
+    }
+    .contacts{
+        height: 130px;
+    }
+}
